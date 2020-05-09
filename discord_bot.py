@@ -1,9 +1,6 @@
 import discord
-import os
-token = os.environ['DISCORD_BOT_TOKEN']
-
+TOKEN = "NzA4NTE1OTM5Mjk3MTMyNTY2.XrZdBA.dloQq7Bq9oP2O5lRtMrW2xlfjaE"
 client = discord.Client()
-
 ID = 708531208472100934
 @client.event
 async def on_ready():
@@ -17,7 +14,7 @@ async def on_raw_reaction_add(payload):
         print(payload.emoji.name)
         guild_id = payload.guild_id
         guild = discord.utils.find(lambda g: g.id == guild_id, client.guilds)
-        role = discord.utils.find(lambda r: r.name == payload.emoji.name, guild.roles)
+        role = discord.utils.find(lambda r: r.name == "positive_passion", guild.roles)
         if role is not None:
             print(role.name + " was found!")
             print(role.id)
@@ -25,4 +22,4 @@ async def on_raw_reaction_add(payload):
             await member.add_roles(role)
             print("done")
 
-client.run(token)
+client.run(TOKEN)
