@@ -1,6 +1,7 @@
 import discord
 
 client = discord.Client()
+
 ID = 708531208472100934
 @client.event
 async def on_ready():
