@@ -30,7 +30,7 @@ async def on_raw_reaction_add(payload):
     if payload.message_id == ID:
         print(payload.emoji.name)
         guild_id = payload.guild_id
-        guild = discord.utils.find(lambda g: g.id == guild_id, client.guilds)
+        guild = discord.utils.find(lambda g: g.id == guild_id, bot.guilds)
         role = discord.utils.find(lambda r: r.name == payload.emoji.name, guild.roles)
         if role is not None:
             print(role.name + " was found!")
