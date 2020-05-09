@@ -22,8 +22,8 @@ ID = 708531208472100934
 @bot.event
 async def on_ready():
     print("Logged in us")
-    print(client.user.name)
-    print(client.user.id)
+    print(bot.user.name)
+    print(bot.user.id)
     print("-----")
 @bot.event
 async def on_raw_reaction_add(payload):
