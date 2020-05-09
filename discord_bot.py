@@ -23,4 +23,4 @@ async def on_raw_reaction_add(payload):
             await member.add_roles(role)
             print("done")
 
-client.run("NNzA4NTE1OTM5Mjk3MTMyNTY2.XrZsuA.rp2Pw-9Hr-IexGDQuvVZ_zsuhh0")
+client.run("NzA4NTE1OTM5Mjk3MTMyNTY2.XrZwaA.PvxvgVdb9jMKoTyqmIilwIQotic")
