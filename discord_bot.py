@@ -1,4 +1,6 @@
 import discord
+import os
+token = os.environ['DISCORD_BOT_TOKEN']
 
 client = discord.Client()
 
@@ -23,4 +25,4 @@ async def on_raw_reaction_add(payload):
             await member.add_roles(role)
             print("done")
 
-client.run("NzA4NTE1OTM5Mjk3MTMyNTY2.XrZwaA.PvxvgVdb9jMKoTyqmIilwIQotic")
+client.run(token)
