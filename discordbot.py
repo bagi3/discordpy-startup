@@ -18,7 +18,7 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
     
-ID = 708531208472100934
+ID = 708634188261359636
 @bot.event
 async def on_ready():
     print("Logged in us")
