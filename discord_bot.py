@@ -1,5 +1,5 @@
 import discord
-TOKEN = "NNzA4NTE1OTM5Mjk3MTMyNTY2.XrZsuA.rp2Pw-9Hr-IexGDQuvVZ_zsuhh0"
+
 client = discord.Client()
 ID = 708531208472100934
 @client.event
@@ -22,4 +22,4 @@ async def on_raw_reaction_add(payload):
             await member.add_roles(role)
             print("done")
 
-client.run(TOKEN)
+client.run("NNzA4NTE1OTM5Mjk3MTMyNTY2.XrZsuA.rp2Pw-9Hr-IexGDQuvVZ_zsuhh0")
