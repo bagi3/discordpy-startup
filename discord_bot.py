@@ -3,7 +3,12 @@ TOKEN = "NzA4NTE1OTM5Mjk3MTMyNTY2.XrYe_A.gBLVFt1koHlB8Xg2MZCEB5Jaymw"
 client = discord.Client()
 ID = 708531208472100934
 @client.event
-
+async def on_ready():
+    print("Logged in us")
+    print(client.user.name)
+    print(client.user.id)
+    print("-----")
+@client.event
 async def on_raw_reaction_add(payload):
     if payload.message_id == ID:
         print(payload.emoji.name)
